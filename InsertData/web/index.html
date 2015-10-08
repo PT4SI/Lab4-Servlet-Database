@@ -6,11 +6,19 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Add Record</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1>Lab: Add Record</h1>
+        <form action="InsertData" method="Post">
+            <label>ID :</label> <input type="text" name="id"> <p>
+                <label>First Name :</label> <input type="text" name="fname"><p>
+            <label>Last Name:</label> <input type="text" name="lname"><p>
+            <label>Birth Date :</label> <input type="text" name="bd"><p>
+                <label>Salary :</label> <input type="text" name="sal"><p>
+                <input type="submit" value="Add Record"> <input type="reset" value="reset">
+        </form>
     </body>
 </html>
