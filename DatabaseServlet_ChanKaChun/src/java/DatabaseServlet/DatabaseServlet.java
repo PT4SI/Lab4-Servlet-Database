@@ -87,10 +87,13 @@ out.println("</head>");
 out.println("<body>");
 out.println("<h1>Servlet DatabaseServlet at " + request.getContextPath() + "</h1>");
 //Display the table format out.println(<table>
+out.println("<table border='1'> <td>First Name</td><td>Last Name</td><td>Birth Date</td><td>Salary</td>");
 while (rs.next()) {
 //Display the database record by using tr, td and rs
+out.println("<tr><td>" + rs.getString("FIRSTNAME") + "</td><td>" + rs.getString("LASTNAME") + "</td><td>" + rs.getDate("BIRTHDATE") + "</td><td>" + rs.getFloat("SALARY") + "</tr>");
 
 }
+out.print("</table>");
 rs.close();
 stmt.close(); 
 conn.close(); 
